@@ -12,3 +12,13 @@ OpenCV, Tesseract, Oxford Dictionary API 등을 이용한 영/영 단어장 App!
 ### 사용 및 주의
 - 사용하기 위해서 native-lib.txt 파일을 .cpp 파일로 변환 이후 각 Oxford ID, KEY를 입력해서 사용하면 된다.
 - MVVM 패턴을 사용하지 않은 코드이다.(큰 프로젝트가 아니기에 이해하기 편할 것으로 생각된다.)
+
+### Simple System Flow
+![flow.png](./images/flow.png)
+
+### App Images
+![](./images/Screenshot_20190222-180740_MySedyProject.jpg)
+![](./images/Screenshot_20190222-180744_MySedyProject.jpg)
+![](./images/Screenshot_20190222-180810_MySedyProject.jpg)
+![](./images/Screenshot_20190222-181048_MySedyProject.jpg)
+![](./images/Screenshot_20190222-181057_MySedyProject.jpg)
