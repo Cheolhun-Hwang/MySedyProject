@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MySedyProject</string>
+    <string name="app_title">My SEDY</string>
+    <string name="main_title">  My SEDY</string>
+    <string name="main_greeting"># 번역할 사진을 촬영해주세요.</string>
+    <string name="call_camera_btn">사진촬영</string>
+
+    <string name="search_hint">단어를 입력해주세요.</string>
+</resources>

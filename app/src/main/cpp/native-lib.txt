@@ -1,0 +1,51 @@
+#include <jni.h>
+#include <string>
+#include <opencv2/opencv.hpp>
+//#include <opencv2/core/core.hpp>
+//#include <opencv2/imageproc/imgproc.hpp>
+
+using namespace cv;
+
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_hch_hooney_mysedyproject_MainActivity_stringFromJNI(
+        JNIEnv *env,
+        jobject /* this */) {
+    std::string hello = " Hello!";
+    return env->NewStringUTF(hello.c_str());
+}
+
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_hch_hooney_mysedyproject_SearchWordActivity_getOxfordID(
+        JNIEnv *env,
+        jobject /* this */) {
+    std::string oxford_id = "Your oxford ID";
+    return env->NewStringUTF(oxford_id.c_str());
+}
+
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_hch_hooney_mysedyproject_SearchWordActivity_getOxfordKey(
+        JNIEnv *env,
+        jobject /* this */) {
+    std::string oxford_key = "Your oxford Key";
+    return env->NewStringUTF(oxford_key.c_str());
+}
+
+extern "C"
+JNIEXPORT void JNICALL
+Java_hch_hooney_mysedyproject_CameraActivity_ConvertRGBtoGray(JNIEnv *env, jobject instance,
+                                                              jlong matAddrInput,
+                                                              jlong matAddrResult) {
+
+    // 입력 RGBA 이미지를 GRAY 이미지로 변환
+
+    Mat &matInput = *(Mat *)matAddrInput;
+
+    Mat &matResult = *(Mat *)matAddrResult;
+
+
+    cvtColor(matInput, matResult, COLOR_RGBA2GRAY);
+
+}

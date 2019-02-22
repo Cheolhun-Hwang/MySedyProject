@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="12.5sp"
+            android:layout_marginBottom="6.25sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="12.5sp"
+                android:layout_marginRight="6.25sp"
+                android:padding="7.5sp"
+                android:layout_weight="1"
+                android:background="@color/red_300"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="128sp">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="My word cards"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold|italic"
+                    android:textSize="36sp"
+                    android:textColor="@color/white"
+                    android:text="0"
+                    android:id="@+id/main_word_count"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="6.25sp"
+                android:layout_marginRight="12.5sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="128sp">
+                <LinearLayout
+                    android:id="@+id/tab_two_linear"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_two"
+                    android:layout_marginBottom="4sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="나만의 단어장"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tab_three_linear"
+                    android:clickable="true"
+                    android:background="@drawable/tab_three"
+                    android:layout_weight="1"
+                    android:layout_marginTop="4sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="단어 찾기"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="12.5sp"
+            android:layout_marginRight="12.5sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/tab_four_linear"
+                android:clickable="true"
+                android:layout_marginTop="6.25sp"
+                android:layout_marginBottom="6.25sp"
+                android:background="@drawable/tab_four"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="64sp">
+                <ImageView
+                    android:padding="12sp"
+                    android:src="@drawable/ic_g_translate_black_24dp"
+                    android:layout_weight="0.15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="문장 번역"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_five_linear"
+                android:clickable="true"
+                android:layout_marginTop="6.25sp"
+                android:layout_marginBottom="6.25sp"
+                android:background="@drawable/tab_five"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="64sp">
+                <ImageView
+                    android:padding="12sp"
+                    android:src="@drawable/ic_camera_alt_white_24dp"
+                    android:layout_weight="0.15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="사진 번역"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/grey_500"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="7.5sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="64sp">
+        <TextView
+            android:text="구글 Ads"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

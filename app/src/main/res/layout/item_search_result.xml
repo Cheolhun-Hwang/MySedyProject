@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/grey_300"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="7sp"
+        android:layout_marginTop="2sp"
+        android:layout_marginBottom="2sp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Top -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="bottom|center"
+                android:id="@+id/item_search_result_word"
+                android:textColor="@color/blue_grey_900"
+                android:textStyle="bold"
+                android:text="Word"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:gravity="bottom|center"
+                android:id="@+id/item_search_result_atr"
+                android:textColor="@color/blue_grey_900"
+                android:textStyle="bold"
+                android:text="[noun]"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/item_search_result_add"
+                    android:layout_alignParentRight="true"
+                    android:tint="@color/blue_700"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:background="@color/alpha"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- Middle -->
+        <LinearLayout
+            android:layout_marginTop="7.5sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/blue_grey_900"
+                android:textStyle="bold"
+                android:textSize="13.5sp"
+                android:text="[ Definition ]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:hyphenationFrequency="full"
+                android:breakStrategy="high_quality"
+                android:id="@+id/item_search_result_definition"
+                android:textColor="@color/blue_grey_900"
+                android:textStyle="normal|italic"
+                android:textSize="12.5sp"
+                android:text="..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/blue_grey_900"
+                android:textStyle="bold"
+                android:textSize="13.5sp"
+                android:text="[ Example sentence ]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:hyphenationFrequency="full"
+                android:breakStrategy="high_quality"
+                android:id="@+id/item_search_result_exam_sentence"
+                android:textColor="@color/blue_grey_900"
+                android:textStyle="normal|italic"
+                android:textSize="12.5sp"
+                android:text="..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Bottom -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/item_search_result_tts_un"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_toStartOf="@+id/item_search_result_tts_uk"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_hearing_black_24dp"
+                android:drawableTint="@color/white"
+                android:text="en(un)"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/item_search_result_tts_uk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_hearing_black_24dp"
+                android:drawableTint="@color/white"
+                android:text="en(uk)"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
